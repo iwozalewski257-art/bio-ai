@@ -466,7 +466,7 @@ if user_input:
     with st.chat_message("assistant", avatar="🧠"):
         with st.spinner("Myślę..."):
             response = client.responses.create(
-                model="gpt-5.1",
+                model="gpt-5.4-mini",
                 input=[
                     {"role": "system", "content": system_prompt},
                     {"role": "developer", "content": developer_context},
