@@ -88,7 +88,7 @@ button {
 # API KEY
 # Lokalnie najlepiej:
 # set OPENAI_API_KEY=twój_klucz
-client = OpenAI(api_key="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")
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 PROMPTS_DIR = Path("prompts")
 DATA_DIR = Path("data")
